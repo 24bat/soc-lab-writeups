@@ -54,7 +54,9 @@ Content-Type: application/x-www-form-urlencoded
 
 ## Checking it against VirusTotal
 
-Threw `146.59.71.167` (one of the C2 IPs) into VirusTotal. Only 1 out of 89 vendors flagged it. On its own that's a pretty weak signal — but I'd already seen strong behavioral evidence, so I didn't let a quiet reputation score talk me out of what the traffic itself was telling me. Reputation checks are a data point, not the final word.
+Checked `146.59.71.167` (one of the C2 IPs) against VirusTotal first: **1/89** vendors flagged it as malware, a weak signal on its own.
+
+Checked the domain itself instead `grinswakebthu.info` and got a clearer result: **2/89** vendors flagged it as malicious, including Fortinet. Domain reputation gave a stronger, more consistent signal than the IP check, which makes sense. IPs get shared and rotated across campaigns, domains tend to stay more tightly tied to the actor behind them. Worth checking more than one indicator type before drawing a conclusion.
 
 ## Where I landed
 

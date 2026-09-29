@@ -8,3 +8,4 @@ would document it.
 
 - `/tryhackme/` — TryHackMe SOC Simulator case reports (alert triage, Splunk SPL queries, IOC investigation)
 - `/traffic-analysis/` — packet capture (pcap) investigations from malware-traffic-analysis.net (Wireshark, IOC extraction, C2 identification)
+- `/case-tracking/` — ticketing system setup (Jira board, incident lifecycle, ticket structure)
